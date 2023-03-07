@@ -3,11 +3,13 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from RAWG import get_games
 from wikipedia_parsing import get_creators
+
+#Подключаемся к базе данных
 engine = create_engine('postgresql+psycopg2://postgres:qewrytuoip@localhost/Games')
 
 Base = declarative_base()
 
-
+#Создаем класс для каждой из наших таблиц
 class Users(Base):
     __tablename__ = 'users'
     username = Column(String, primary_key=True)
@@ -64,8 +66,10 @@ class Games(Base):
 Session = sessionmaker(bind=engine)
 session = Session()
 
+#Здесь я перебираю каждую игру в нашей базе данных
 for row in session.query(Games):
     try:
+        # У меня почему-то в столбике Ru name был символ О в некоторых играх, поэтому, везде где так я в столбик ru_name записывал оригинальное название
         if row.ru_name == 'О':
             row.ru_name = row.name
         if len(row.director) == 1:
@@ -78,18 +82,23 @@ for row in session.query(Games):
             row.writer = ''
     except:
         pass
-
+#Сохраняем изменения
 session.commit()
+#Закрываем сессию
 session.close()
 
-
+# # Получаем список словарей с нужными нам значениями
 # game_list = get_games()
+
+# # Перебираем словари 
 # for game in game_list:
+# # Проверяем нет ли уже в базе данных игры с таким названиям
 #     if not session.query(Games).filter_by(name=game['name']).first():
+# # Добавляем игру
 #         session.add(Games(**game))
 
 
-
+#Дальше там ненужный на данный момент код
 # my_data = [
 #     {'username': 'qwe1', 'password': 'dasd'},
 #     {'username': 'qwe2', 'password': 'dasd'},
