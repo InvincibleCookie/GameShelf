@@ -4,17 +4,16 @@ import re
 
 def get_developer_name(soup, role, role_mn):
     try:
-        # Нахождение блока с информацией о композиторе игры
-        composer_block = soup.find("th", string=role).parent
+        # Нахождение блока с информацией о разработчике (В role мы передаем его роль) игры
+        block = soup.find("th", string=role).parent
 
-        # Нахождение списка композиторов игры
-        return ", ".join(composer_block.find("td").text.strip().split("\n"))
+        # Нахождение списка разработчиков игры (Компизоторов/сценаристов и т.д, зависит от role)
+        return ", ".join(block.find("td").text.strip().split("\n"))
     except:
         try:
 
-            composer_block = soup.find("th", string=role_mn).parent
-            # Нахождение списка композиторов игры
-            return ", ".join(composer_block.find("td").text.strip().split("\n"))
+            block = soup.find("th", string=role_mn).parent
+            return ", ".join(block.find("td").text.strip().split("\n"))
         except:
             return ''
 
@@ -33,7 +32,6 @@ def get_creators(game_name):
 
         # Нахождение блока с информацией о руководителе игры
 
-        # Нахождение имени руководителя игры
         title = soup.find("title").text.strip().split("-")[0].strip().strip().replace(" — Википедия", "")
         composer_list = get_developer_name(soup, 'Композитор', "Композиторы")
         director_list = get_developer_name(soup, 'Руководитель', "Руководители")
@@ -81,7 +79,6 @@ def get_creators(game_name):
     else:
         return ("Ошибка при получении страницы с Википедии")
 
-print(get_creators("A Monster's Expedition"))
 # import requests
 # from bs4 import BeautifulSoup
 #
