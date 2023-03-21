@@ -59,7 +59,7 @@ class Games(Base):
     sells = Column(String)
     user_score = Column(Float)
     metacritic_score = Column(Float)
-    poster = Column(String)
+    cover = Column(String)
     description = Column(String)
 
 
