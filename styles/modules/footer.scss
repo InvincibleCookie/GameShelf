@@ -1,0 +1,58 @@
+$indents: 24px;
+%text {
+    color: white;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    margin-left: 11px;
+}
+$display: flex;
+.footer {
+    display: $display;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: $indents;
+    padding-bottom: $indents;
+    box-shadow: 0px -1px 51px #18BCA1;
+    &_logo {
+        width: 151px;
+        height: 107px;
+        margin-left: 114px;
+    }
+}
+.contacts {
+    display: $display;
+    flex-direction: column;
+}
+.phone {
+    display: $display;
+    margin-bottom: $indents;
+    &_text {
+        @extend %text;
+    }
+}
+.mail {
+    display: $display;
+    &_text {
+        @extend %text;
+    }
+}
+.social {
+    margin-right: 103px;
+    display: $display;
+    flex-direction: column;
+    &_text {
+        color: white;
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        margin-bottom: $indents;
+    }
+    &_img {
+        display: $display;
+        justify-content: space-around;
+    }
+}

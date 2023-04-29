@@ -1,0 +1,52 @@
+%style-input {
+    border: none;
+    outline: none;
+    border-radius: 30px;
+}
+$indens: 60px;
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+.header {
+    display: flex;
+    align-items: center;
+    padding-left: $indens;
+    padding-right: $indens;
+    margin-bottom: 73px;
+    box-shadow: 0px -2px 86px #18BCA1;
+    &_logo {
+        width: 120px;
+        height: 85px;
+        padding-bottom: 5px;
+    }
+    &_profile {
+        margin-left: 54px;
+    }
+}
+form { 
+    position: relative;
+    width: 345px;
+    margin-left: 751px;
+}
+input {
+    width: 300px;
+    height: 35px;
+    background: white;
+    padding-left: 15px;
+    padding-right: 45px;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 58px;
+    @extend %style-input;
+}
+button {
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    background-color: transparent;
+    cursor: pointer;
+    @extend %style-input;
+}
