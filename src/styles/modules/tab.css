@@ -1,0 +1,35 @@
+.tabs__nav {
+  margin: 0;
+  padding: 20px 64px;
+  background: rgb(80, 63, 175);
+  border-radius: 20px 20px 0px 0px;
+  position: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 95px;
+       column-gap: 95px;
+}
+
+.btn {
+  width: 325px;
+  height: 52px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 52px;
+  text-align: center;
+  color: #000000;
+  background: #AFAFAF;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn:last-child {
+  border-right: none;
+}
+.btn:hover {
+  background-color: #838383;
+}
+.btn.active {
+  background: #F5F5F5;
+  box-shadow: 0px 0px 14px #FFFFFF;
+}/*# sourceMappingURL=tab.css.map */

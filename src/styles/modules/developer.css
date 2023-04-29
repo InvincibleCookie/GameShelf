@@ -1,0 +1,61 @@
+.awards_header, .developer_info, .developer_name2, .developer_name1 {
+  color: white;
+  font-family: "Inter";
+  font-weight: 400;
+}
+
+.developer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 124px;
+}
+.developer_photo {
+  margin-left: 91px;
+  margin-right: 39px;
+  border-radius: 15px;
+  width: 302px;
+  height: 361px;
+}
+.developer_about {
+  display: flex;
+  background-image: url(../img/background.svg);
+  background-repeat: no-repeat;
+  background-position: 91px 149px;
+}
+.developer_text {
+  background: transparent;
+}
+.developer_name1 {
+  font-size: 32px;
+  line-height: 39px;
+  margin-top: 38px;
+  margin-bottom: 6px;
+}
+.developer_name2 {
+  font-size: 20px;
+  line-height: 24px;
+}
+.developer_info {
+  font-size: 24px;
+  line-height: 37px;
+  margin-top: 74px;
+  padding-right: 280px;
+  background: transparent;
+}
+
+.awards {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  align-items: center;
+  margin-right: 133px;
+}
+.awards_header {
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+.awards_slider1 {
+  border-radius: 25px;
+}/*# sourceMappingURL=developer.css.map */

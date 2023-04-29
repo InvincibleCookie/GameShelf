@@ -1,0 +1,16 @@
+.game_btn {
+  filter: drop-shadow(0px 0px 80px #18BCA1);
+  width: 235px;
+  height: 59px;
+  background: #18BCA1;
+  border-radius: 74px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 59px;
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 0px 0px 5px #FFFFFF;
+  cursor: pointer;
+  margin-left: 95px;
+}/*# sourceMappingURL=buttons.css.map */

@@ -1,380 +1,314 @@
-* {
-    margin: 0;
-    padding: 0;
+button, input {
+  border: none;
+  outline: none;
+  border-radius: 30px;
+}
 
-    background-color: black;
+* {
+  margin: 0;
+  padding: 0;
+  background-color: black;
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-
-    margin-bottom: 73px;
-
-    box-shadow: 0px -2px 86px #18BCA1;
+  display: flex;
+  align-items: center;
+  padding-left: 60px;
+  margin-bottom: 73px;
+  box-shadow: 0px -2px 86px #18BCA1;
 }
-
-.hesder_link {
-    margin-left: 60px;
-}
-
 .header_logo {
-    width: 120 px;
-    height: 85px;
-    padding-bottom: 5px;
+  width: 120px;
+  height: 85px;
+  padding-bottom: 5px;
 }
-
-.header2 {
-    display: flex;
-    align-items: center;
-    margin-right: 60px;
+.header_profile {
+  margin-left: 54px;
 }
 
 form {
-    position: relative;
-    width: 345px;
-    /* margin: 0 auto; */
-    margin-right: 54px;
-}
-
-input, button {
-    border: none;
-    outline: none;
-    border-radius: 30px;
+  position: relative;
+  width: 345px;
+  margin-left: 751px;
 }
 
 input {
-    width: 300px;
-    height: 35px;
-    background: white;
-    padding-left: 15px;
-    padding-right: 45px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 58px;
+  width: 300px;
+  height: 35px;
+  background: white;
+  padding-left: 15px;
+  padding-right: 45px;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 58px;
 }
 
 button {
-    position: absolute;
-    top: 5px;
-    right: 0px;
-    background-color: transparent;
-    cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 0px;
+  background-color: transparent;
+  cursor: pointer;
 }
 
-
+.game_mark, .tab_p, .tab_h, .awards_header, .developer_info, .developer_name2, .developer_name1 {
+  color: white;
+  font-family: "Inter";
+  font-weight: 400;
+}
 
 .developer {
-    display: flex;
-    justify-content: space-between;
-
-    margin-bottom: 124px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 124px;
 }
-
 .developer_photo {
-    margin-left: 91px;
-    margin-right: 39px;
-    border-radius: 15px;
-    width: 302px;
-    height: 361px;
+  margin-left: 91px;
+  margin-right: 39px;
+  border-radius: 15px;
+  width: 302px;
+  height: 361px;
 }
-
-.about_developer {
-    display: flex;
-    color: white;
-
-    background-image: url(img/background.svg);
-    background-repeat: no-repeat;
-    background-position: 91px 149px;
+.developer_about {
+  display: flex;
+  background-image: url(../img/background.svg);
+  background-repeat: no-repeat;
+  background-position: 91px 149px;
 }
-
 .developer_text {
-    background: transparent;
+  background: transparent;
 }
-
 .developer_name1 {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 39px;
-
-    margin-top: 38px;
-    margin-bottom: 6px;
+  font-size: 32px;
+  line-height: 39px;
+  margin-top: 38px;
+  margin-bottom: 6px;
 }
-
 .developer_name2 {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
+  font-size: 20px;
+  line-height: 24px;
 }
-
 .developer_info {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 37px;
-
-    margin-top: 74px;
-    padding-right: 280px;
-
-    background: transparent;
+  font-size: 24px;
+  line-height: 37px;
+  margin-top: 74px;
+  padding-right: 280px;
+  background: transparent;
 }
 
 .awards {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    align-items: center;
-
-    margin-right: 133px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  align-items: center;
+  margin-right: 133px;
 }
-
 .awards_header {
-    color: white;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 39px;
-    text-align: center;
-
-    margin-bottom: 32px;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  margin-bottom: 32px;
 }
-
 .awards_slider1 {
-    border-radius: 25px;
+  border-radius: 25px;
 }
-
-
 
 .test {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 70px;
-    text-align: center;
-
-    color: #FFFFFF;
-
-    background-image: url(img/game_pad.png);
-    background-repeat: no-repeat;
-    background-size: 1294px 368px;
-    background-position: center 0;
-
-    align-items: center;
-    justify-content: center;
-    
-    padding-top: 121px;
-    padding-bottom: 107px;
-    margin-bottom: 162px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 70px;
+  text-align: center;
+  color: #FFFFFF;
+  background-image: url(img/game_pad.png);
+  background-repeat: no-repeat;
+  background-size: 1294px 368px;
+  background-position: center 0;
+  align-items: center;
+  justify-content: center;
+  padding-top: 121px;
+  padding-bottom: 107px;
+  margin-bottom: 162px;
 }
 
-
-
-.games {
-    padding: 0;
-    margin-left: 73px;
-    margin-right: 73px;
-    position: center;
-    margin-bottom: 126px;
-    background: #090D21;
-    box-shadow: 0px 0px 50px #9546F7;
-    border-radius: 20px;
-}
 .tabs__nav {
-    margin: 0;
-    padding: 20px 64px;
-    background: rgba(80, 63, 175, 1);
-    border-radius: 20px 20px 0px 0px;
-    position: center;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 95px;
+  margin: 0;
+  padding: 20px 64px;
+  background: rgb(80, 63, 175);
+  border-radius: 20px 20px 0px 0px;
+  position: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 95px;
+       column-gap: 95px;
 }
+
 .btn {
-    width: 325px;
-    height: 52px;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 52px;
-    text-align: center;
-    color: #000000;
-    background: #AFAFAF;
-    border-radius: 10px;
-    cursor: pointer;
+  width: 325px;
+  height: 52px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 52px;
+  text-align: center;
+  color: #000000;
+  background: #AFAFAF;
+  border-radius: 10px;
+  cursor: pointer;
 }
 .btn:last-child {
-    border-right: none;
+  border-right: none;
 }
 .btn:hover {
-    background-color: #838383;
+  background-color: #838383;
 }
 .btn.active {
-    background: #F5F5F5;
-    box-shadow: 0px 0px 14px #FFFFFF;
+  background: #F5F5F5;
+  box-shadow: 0px 0px 14px #FFFFFF;
 }
+
+.game_mark, .tab_p, .tab_h, .developer_name1, .developer_name2, .developer_info, .awards_header {
+  font-family: "Inter";
+  font-weight: 400;
+}
+
+.games {
+  padding: 0;
+  margin-left: 73px;
+  margin-right: 73px;
+  position: center;
+  margin-bottom: 126px;
+  background: #090D21;
+  box-shadow: 0px 0px 50px #9546F7;
+  border-radius: 20px;
+}
+
 .tab_h {
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 44px;
-    color: #FFFFFF;
-    background: transparent;
+  font-size: 36px;
+  line-height: 44px;
+  color: #FFFFFF;
+  background: transparent;
 }
 .tab_p {
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    color: #FFFFFF;
-    background: #090D21;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
+  background: #090D21;
 }
+
 .tabs__content {
-    border-radius: 20px;
-    background: #090D21;
+  border-radius: 20px;
+  background: #090D21;
 }
 .tabs__item {
-    display: none;
-    padding-left: 73px;
-    padding-right: 73px;
-    padding-top: 54px;
-    padding-bottom: 31px;
-    background: #090D21;
-    border-radius: 20px;
+  display: none;
+  padding-left: 73px;
+  padding-right: 73px;
+  padding-top: 54px;
+  padding-bottom: 31px;
+  background: #090D21;
+  border-radius: 20px;
 }
 .tabs__item.active {
-    display: block;
+  display: block;
 }
+
 .game {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr 2fr;
-    align-items: center;
-    background: #090D21;
-    margin-bottom: 49px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 2fr;
+  align-items: center;
+  background: #090D21;
+  margin-bottom: 49px;
 }
 .game_img {
-    object-fit: cover;
-    width: 214px;
-    height: 270px;
-    border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 214px;
+  height: 270px;
+  border-radius: 10px;
 }
 .game_text {
-    margin-left: 55px;
-    background: transparent;
+  margin-left: 55px;
+  background: transparent;
 }
 .game_mark {
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 58px;
-    text-align: center;
-    color: #FFFFFF;
-    text-shadow: 0px 0px 30px #FFFFFF;
-    background: transparent;
-    margin-left: 97px;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 0px 0px 30px #FFFFFF;
+  background: transparent;
+  margin-left: 97px;
 }
+
 .game_btn {
-    filter: drop-shadow(0px 0px 80px #18BCA1);
-    width: 235px;
-    height: 59px;
-    background: #18BCA1;
-    border-radius: 74px;
-    font-family: 'Inter';
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 59px;
-    text-align: center;
-    color: #FFFFFF;
-    text-shadow: 0px 0px 5px #FFFFFF;
-    cursor: pointer;
-    margin-left: 95px;
+  filter: drop-shadow(0px 0px 80px #18BCA1);
+  width: 235px;
+  height: 59px;
+  background: #18BCA1;
+  border-radius: 74px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 59px;
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 0px 0px 5px #FFFFFF;
+  cursor: pointer;
+  margin-left: 95px;
 }
 
-
+.mail_text, .phone_text {
+  color: white;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  margin-left: 11px;
+}
 
 .footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    padding-top: 24px;
-    padding-bottom: 24px;
-
-    box-shadow: 0px -1px 51px #18BCA1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  box-shadow: 0px -1px 51px #18BCA1;
 }
-
 .footer_logo {
-    width: 151px;
-    height: 107px;
-
-    margin-left: 114px;
+  width: 151px;
+  height: 107px;
+  margin-left: 114px;
 }
 
 .contacts {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .phone {
-    display: flex;
-
-    margin-bottom: 24px;
+  display: flex;
+  margin-bottom: 24px;
 }
-
-.phone_text {
-    color: white;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-
-    margin-left: 11px;
-}
-
 .mail {
-    display: flex;
+  display: flex;
 }
-
-.mail_text {
-    color: white;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-
-    margin-left: 11px;
-}
-
 .social {
-    margin-right: 103px;
-    display: flex;
-    flex-direction: column;
+  margin-right: 103px;
+  display: flex;
+  flex-direction: column;
 }
-
 .social_text {
-    color: white;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-
-    margin-bottom: 24px;
+  color: white;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 24px;
 }
-
 .social_img {
-    display: flex;
-    justify-content: space-around;
-}
+  display: flex;
+  justify-content: space-around;
+}/*# sourceMappingURL=developer.css.map */
