@@ -1,0 +1,31 @@
+.rating_critics_text, .rating_game_text {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  color: #FFFFFF;
+}
+
+.rating_critics_mark, .rating_game_mark {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 116px;
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 0px 0px 15px #FFFFFF;
+  margin-top: 165px;
+}
+
+.rating {
+  padding-top: 116px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 225px;
+}
+.rating_game {
+  text-align: center;
+}
+.rating_critics {
+  text-align: center;
+}/*# sourceMappingURL=rating.css.map */

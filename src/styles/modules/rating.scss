@@ -1,0 +1,42 @@
+%rating-text-style {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    color: #FFFFFF;
+}
+%rating-mark-style {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 116px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 15px #FFFFFF;
+    margin-top: 165px;
+}
+
+.rating {
+    padding-top: 116px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 225px;
+    &_game {
+        text-align: center;
+        &_text {
+            @extend %rating-text-style;
+        }
+        &_mark {
+            @extend %rating-mark-style;
+        }
+    }
+    &_critics {
+        text-align: center;
+        &_text {
+            @extend %rating-text-style;
+        }
+        &_mark {
+            @extend %rating-mark-style;
+        }
+    }
+}

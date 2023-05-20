@@ -9,6 +9,7 @@
     justify-content: space-between;
     margin-bottom: 124px;
     &_photo {
+        object-fit: cover;
         margin-left: 91px;
         margin-right: 39px;
         border-radius: 15px;

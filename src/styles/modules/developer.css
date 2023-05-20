@@ -10,6 +10,8 @@
   margin-bottom: 124px;
 }
 .developer_photo {
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-left: 91px;
   margin-right: 39px;
   border-radius: 15px;

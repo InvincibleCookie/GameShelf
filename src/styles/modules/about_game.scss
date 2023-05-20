@@ -1,0 +1,20 @@
+.game_info {
+    margin-top: 88px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    background: #080A09;
+    &_text {
+        color: white;
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 50px;
+        padding-left: 213px;
+        background: transparent;
+        & p {
+            background: transparent;
+        }
+    }
+}

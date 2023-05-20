@@ -1,0 +1,64 @@
+$border-radius: 20px;
+%review-text-style {
+    font-family: 'Inter';
+    font-weight: 400;
+    color: #FFFFFF;
+    background: transparent;
+}
+
+.reviews_section {
+    margin-bottom: 132px;
+    &_p {
+        @extend %review-text-style;
+        font-size: 48px;
+        line-height: 58px;
+        text-align: center;
+        margin-bottom: 58px;
+    }
+}
+
+.reviews {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 44px;
+    margin: 0 73px;
+}
+.review {
+    background-color: #090E22;
+    border-radius: $border-radius;
+    min-height: 501px;
+    box-shadow: 0px 0px 30px #9546F7;
+    &_header {
+        background-color: #503FAF;
+        border-radius: $border-radius $border-radius 0 0;
+        display: grid;
+        grid-template-columns: 1.5fr 3fr 1fr;
+        align-items: center;
+        padding: 10px 40px 10px 40px;
+    }
+    &_body {
+        background: transparent;
+        padding: 45px 40px;
+        @extend %review-text-style;
+        font-size: 36px;
+        line-height: 44px;
+    }
+}
+
+.avatar {
+    object-fit: cover;
+    width: 61px;
+    height: 61px;
+    border-radius: 30px;
+    &_name {
+        @extend %review-text-style;
+        font-size: 40px;
+        line-height: 48px;
+    }
+    &_mark {
+        @extend %review-text-style;
+        font-size: 36px;
+        line-height: 44px;
+        text-shadow: 0px 0px 18px #FFFFFF;
+    }
+}
