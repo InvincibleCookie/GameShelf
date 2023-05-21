@@ -1,0 +1,60 @@
+$bg-color: #090D21;
+$indents: 73px;
+%text-style {
+    font-family: 'Inter';
+    font-weight: 400;
+}
+$white-color: #FFFFFF;
+
+.studio_games {
+    padding: 74px 0 30px 66px;
+    margin: 0 $indents;
+    position: center;
+    margin-bottom: 126px;
+    background: $bg-color;
+    box-shadow: 0px 0px 50px #9546F7;
+    border-radius: 20px;
+}
+.tab {
+    &_h {
+        @extend %text-style;
+        font-size: 36px;
+        line-height: 44px;
+        color: $white-color;
+        background: transparent;
+    }
+    &_p {
+        @extend %text-style;
+        font-size: 24px;
+        line-height: 29px;
+        color: $white-color;
+        background: $bg-color;
+    }
+}
+.game {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr;
+    align-items: center;
+    background: $bg-color;
+    margin-bottom: 49px;
+    &_img {
+        object-fit: cover;
+        width: 214px;
+        height: 270px;
+        border-radius: 10px;
+    }
+    &_text {
+        margin-left: 55px;
+        background: transparent;
+    }
+    &_mark {
+        @extend %text-style;
+        font-size: 48px;
+        line-height: 58px;
+        text-align: center;
+        color: $white-color;
+        text-shadow: 0px 0px 30px $white-color;
+        background: transparent;
+        margin-left: 97px;
+    }
+}
