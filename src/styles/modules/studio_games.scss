@@ -3,11 +3,15 @@ $indents: 73px;
 %text-style {
     font-family: 'Inter';
     font-weight: 400;
+    background: transparent;
+    color: #FFFFFF;
 }
-$white-color: #FFFFFF;
 
 .studio_games {
-    padding: 74px 0 30px 66px;
+    padding: 74px 66px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 49px;
     margin: 0 $indents;
     position: center;
     margin-bottom: 126px;
@@ -20,23 +24,18 @@ $white-color: #FFFFFF;
         @extend %text-style;
         font-size: 36px;
         line-height: 44px;
-        color: $white-color;
-        background: transparent;
     }
     &_p {
         @extend %text-style;
         font-size: 24px;
         line-height: 29px;
-        color: $white-color;
-        background: $bg-color;
     }
 }
 .game {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr 2fr;
+    grid-template-columns: 1fr 2fr 1.5fr 2fr;
     align-items: center;
     background: $bg-color;
-    margin-bottom: 49px;
     &_img {
         object-fit: cover;
         width: 214px;
@@ -52,9 +51,7 @@ $white-color: #FFFFFF;
         font-size: 48px;
         line-height: 58px;
         text-align: center;
-        color: $white-color;
-        text-shadow: 0px 0px 30px $white-color;
-        background: transparent;
+        text-shadow: 0px 0px 30px #FFFFFF;
         margin-left: 97px;
     }
 }

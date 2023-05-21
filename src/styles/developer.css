@@ -174,6 +174,8 @@ button {
 .game_mark, .tab_p, .tab_h, .developer_name1, .developer_name2, .developer_info, .awards_header {
   font-family: "Inter";
   font-weight: 400;
+  background: transparent;
+  color: #FFFFFF;
 }
 
 .games {
@@ -190,14 +192,10 @@ button {
 .tab_h {
   font-size: 36px;
   line-height: 44px;
-  color: #FFFFFF;
-  background: transparent;
 }
 .tab_p {
   font-size: 24px;
   line-height: 29px;
-  color: #FFFFFF;
-  background: #090D21;
 }
 
 .tabs__content {
@@ -239,9 +237,7 @@ button {
   font-size: 48px;
   line-height: 58px;
   text-align: center;
-  color: #FFFFFF;
   text-shadow: 0px 0px 30px #FFFFFF;
-  background: transparent;
   margin-left: 97px;
 }
 

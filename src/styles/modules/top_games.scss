@@ -7,15 +7,25 @@ $indents: 73px;
     color: #FFFFFF;
 }
 
-.games {
-    padding: 0;
+.top_games {
+    padding: 61px 0;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 49px;
     margin-left: $indents;
     margin-right: $indents;
     position: center;
-    margin-bottom: 126px;
+    margin-bottom: 161px;
     background: $bg-color;
     box-shadow: 0px 0px 50px #9546F7;
     border-radius: 20px;
+    &_header {
+        @extend %text-style;
+        font-size: 48px;
+        line-height: 58px;
+        text-align: center;
+        margin-bottom: 86px;
+    }
 }
 .tab {
     &_h {
@@ -29,30 +39,18 @@ $indents: 73px;
         line-height: 29px;
     }
 }
-.tabs__ {
-    &content {
-        border-radius: 20px;
-        background: $bg-color;
-    }
-    &item {
-        display: none;
-        padding-left: $indents;
-        padding-right: $indents;
-        padding-top: 54px;
-        padding-bottom: 31px;
-        background: $bg-color;
-        border-radius: 20px;
-        &.active {
-            display: block;
-        }
-    }
-}
 .game {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr 2fr;
+    grid-template-columns: 2fr 2fr 2.5fr 3fr;
     align-items: center;
     background: $bg-color;
-    margin-bottom: 49px;
+    &_number {
+        @extend %text-style;
+        font-size: 48px;
+        line-height: 58px;
+        text-align: center;
+        text-shadow: 0px 0px 30px #FFFFFF;
+    }
     &_img {
         object-fit: cover;
         width: 214px;
@@ -60,7 +58,6 @@ $indents: 73px;
         border-radius: 10px;
     }
     &_text {
-        margin-left: 55px;
         background: transparent;
     }
     &_mark {
@@ -69,6 +66,5 @@ $indents: 73px;
         line-height: 58px;
         text-align: center;
         text-shadow: 0px 0px 30px #FFFFFF;
-        margin-left: 97px;
     }
 }

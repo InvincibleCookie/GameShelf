@@ -1,0 +1,50 @@
+$profile-photo-size: 273px;
+%profile-text-style {
+    font-family: 'Inter';
+    font-weight: 400;
+    color: #FFFFFF;
+    background: transparent;
+}
+
+.profile {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    align-items: center;
+    background: url(../img/cover.png) no-repeat center center;
+    background-size: 100%;
+    padding: 89px 80px;
+    margin-bottom: 72px;
+    &_text {
+        background: transparent;
+    }
+    &_img {
+        width: $profile-photo-size;
+        height: $profile-photo-size;
+        border-radius: 100%;
+    }
+}
+.nickname {
+    @extend %profile-text-style;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 22px;
+}
+.status {
+    @extend %profile-text-style;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 22px;
+}
+.change_profile {
+    background: transparent;
+    position: relative;
+    @extend %profile-text-style;
+    color: #AAAAAA;
+    & img {
+        width: 15px;
+        height: 15px;
+        background: transparent;
+        margin-left: 10px;
+    }
+}

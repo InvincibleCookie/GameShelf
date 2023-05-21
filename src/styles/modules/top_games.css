@@ -1,19 +1,28 @@
-.game_mark, .tab_p, .tab_h {
+.game_mark, .game_number, .tab_p, .tab_h, .top_games_header {
   font-family: "Inter";
   font-weight: 400;
   background: transparent;
   color: #FFFFFF;
 }
 
-.games {
-  padding: 0;
+.top_games {
+  padding: 61px 0;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 49px;
   margin-left: 73px;
   margin-right: 73px;
   position: center;
-  margin-bottom: 126px;
+  margin-bottom: 161px;
   background: #090D21;
   box-shadow: 0px 0px 50px #9546F7;
   border-radius: 20px;
+}
+.top_games_header {
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+  margin-bottom: 86px;
 }
 
 .tab_h {
@@ -25,29 +34,17 @@
   line-height: 29px;
 }
 
-.tabs__content {
-  border-radius: 20px;
-  background: #090D21;
-}
-.tabs__item {
-  display: none;
-  padding-left: 73px;
-  padding-right: 73px;
-  padding-top: 54px;
-  padding-bottom: 31px;
-  background: #090D21;
-  border-radius: 20px;
-}
-.tabs__item.active {
-  display: block;
-}
-
 .game {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr 2fr;
+  grid-template-columns: 2fr 2fr 2.5fr 3fr;
   align-items: center;
   background: #090D21;
-  margin-bottom: 49px;
+}
+.game_number {
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+  text-shadow: 0px 0px 30px #FFFFFF;
 }
 .game_img {
   -o-object-fit: cover;
@@ -57,7 +54,6 @@
   border-radius: 10px;
 }
 .game_text {
-  margin-left: 55px;
   background: transparent;
 }
 .game_mark {
@@ -65,5 +61,4 @@
   line-height: 58px;
   text-align: center;
   text-shadow: 0px 0px 30px #FFFFFF;
-  margin-left: 97px;
-}/*# sourceMappingURL=game.css.map */
+}/*# sourceMappingURL=top_games.css.map */

@@ -1,0 +1,49 @@
+.change_profile, .status, .nickname {
+  font-family: "Inter";
+  font-weight: 400;
+  color: #FFFFFF;
+  background: transparent;
+}
+
+.profile {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  align-items: center;
+  background: url(../img/cover.png) no-repeat center center;
+  background-size: 100%;
+  padding: 89px 80px;
+  margin-bottom: 72px;
+}
+.profile_text {
+  background: transparent;
+}
+.profile_img {
+  width: 273px;
+  height: 273px;
+  border-radius: 100%;
+}
+
+.nickname {
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 22px;
+}
+
+.status {
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 22px;
+}
+
+.change_profile {
+  background: transparent;
+  position: relative;
+  color: #AAAAAA;
+}
+.change_profile img {
+  width: 15px;
+  height: 15px;
+  background: transparent;
+  margin-left: 10px;
+}/*# sourceMappingURL=profile.css.map */

@@ -15,8 +15,9 @@ button, input {
   align-items: center;
   padding-left: 60px;
   padding-right: 60px;
-  margin-bottom: 73px;
   box-shadow: 0px -2px 86px #18BCA1;
+  position: relative;
+  z-index: 1;
 }
 .header_logo {
   width: 120px;
@@ -25,6 +26,11 @@ button, input {
 }
 .header_profile {
   margin-left: 54px;
+}
+.header_profile img {
+  width: 65px;
+  height: 65px;
+  border-radius: 100%;
 }
 
 form {
@@ -53,88 +59,94 @@ button {
   cursor: pointer;
 }
 
-.game_mark, .tab_p, .tab_h, .awards_header, .developer_info, .developer_name2, .developer_name1 {
-  color: white;
+.change_profile, .status, .nickname {
   font-family: "Inter";
   font-weight: 400;
-}
-
-.developer {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 124px;
-}
-.developer_photo {
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin-left: 91px;
-  margin-right: 39px;
-  border-radius: 15px;
-  width: 302px;
-  height: 361px;
-}
-.developer_about {
-  display: flex;
-  background-image: url(../img/background.svg);
-  background-repeat: no-repeat;
-  background-position: 91px 149px;
-}
-.developer_text {
-  background: transparent;
-}
-.developer_name1 {
-  font-size: 32px;
-  line-height: 39px;
-  margin-top: 38px;
-  margin-bottom: 6px;
-}
-.developer_name2 {
-  font-size: 20px;
-  line-height: 24px;
-}
-.developer_info {
-  font-size: 24px;
-  line-height: 37px;
-  margin-top: 74px;
-  padding-right: 280px;
+  color: #FFFFFF;
   background: transparent;
 }
 
-.awards {
-  display: flex;
-  flex-direction: column;
-  align-items: end;
+.profile {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
   align-items: center;
-  margin-right: 133px;
+  background: url(../img/cover.png) no-repeat center center;
+  background-size: 100%;
+  padding: 89px 80px;
+  margin-bottom: 72px;
 }
-.awards_header {
+.profile_text {
+  background: transparent;
+}
+.profile_img {
+  width: 273px;
+  height: 273px;
+  border-radius: 100%;
+}
+
+.nickname {
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 22px;
+}
+
+.status {
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 22px;
+}
+
+.change_profile {
+  background: transparent;
+  position: relative;
+  color: #AAAAAA;
+}
+.change_profile img {
+  width: 15px;
+  height: 15px;
+  background: transparent;
+  margin-left: 10px;
+}
+
+.like_games {
+  margin-bottom: 161px;
+}
+.like_games_header {
+  font-family: "Inter";
+  font-weight: 400;
   font-size: 32px;
   line-height: 39px;
   text-align: center;
-  margin-bottom: 32px;
-}
-.awards_slider1 {
-  border-radius: 25px;
+  color: #FFFFFF;
+  margin-bottom: 72px;
 }
 
-.game_mark, .tab_p, .tab_h, .developer_name1, .developer_name2, .developer_info, .awards_header {
+.game_mark, .game_number, .tab_p, .tab_h, .top_games_header {
   font-family: "Inter";
   font-weight: 400;
   background: transparent;
   color: #FFFFFF;
 }
 
-.studio_games {
-  padding: 74px 66px;
+.top_games {
+  padding: 61px 0;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   row-gap: 49px;
-  margin: 0 73px;
+  margin-left: 73px;
+  margin-right: 73px;
   position: center;
-  margin-bottom: 126px;
+  margin-bottom: 161px;
   background: #090D21;
   box-shadow: 0px 0px 50px #9546F7;
   border-radius: 20px;
+}
+.top_games_header {
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+  margin-bottom: 86px;
 }
 
 .tab_h {
@@ -148,9 +160,15 @@ button {
 
 .game {
   display: grid;
-  grid-template-columns: 1fr 2fr 1.5fr 2fr;
+  grid-template-columns: 2fr 2fr 2.5fr 3fr;
   align-items: center;
   background: #090D21;
+}
+.game_number {
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+  text-shadow: 0px 0px 30px #FFFFFF;
 }
 .game_img {
   -o-object-fit: cover;
@@ -160,7 +178,6 @@ button {
   border-radius: 10px;
 }
 .game_text {
-  margin-left: 55px;
   background: transparent;
 }
 .game_mark {
@@ -168,24 +185,6 @@ button {
   line-height: 58px;
   text-align: center;
   text-shadow: 0px 0px 30px #FFFFFF;
-  margin-left: 97px;
-}
-
-.game_btn {
-  filter: drop-shadow(0px 0px 80px #18BCA1);
-  width: 235px;
-  height: 59px;
-  background: #18BCA1;
-  border-radius: 74px;
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 59px;
-  text-align: center;
-  color: #FFFFFF;
-  text-shadow: 0px 0px 5px #FFFFFF;
-  cursor: pointer;
-  margin-left: 95px;
 }
 
 .mail_text, .phone_text {
@@ -240,4 +239,4 @@ button {
 .social_img {
   display: flex;
   justify-content: space-around;
-}/*# sourceMappingURL=studio.css.map */
+}/*# sourceMappingURL=profile.css.map */

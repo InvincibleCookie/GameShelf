@@ -1,10 +1,15 @@
 .game_mark, .tab_p, .tab_h {
   font-family: "Inter";
   font-weight: 400;
+  background: transparent;
+  color: #FFFFFF;
 }
 
 .studio_games {
-  padding: 74px 0 30px 66px;
+  padding: 74px 66px;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 49px;
   margin: 0 73px;
   position: center;
   margin-bottom: 126px;
@@ -16,22 +21,17 @@
 .tab_h {
   font-size: 36px;
   line-height: 44px;
-  color: #FFFFFF;
-  background: transparent;
 }
 .tab_p {
   font-size: 24px;
   line-height: 29px;
-  color: #FFFFFF;
-  background: #090D21;
 }
 
 .game {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr 2fr;
+  grid-template-columns: 1fr 2fr 1.5fr 2fr;
   align-items: center;
   background: #090D21;
-  margin-bottom: 49px;
 }
 .game_img {
   -o-object-fit: cover;
@@ -48,8 +48,6 @@
   font-size: 48px;
   line-height: 58px;
   text-align: center;
-  color: #FFFFFF;
   text-shadow: 0px 0px 30px #FFFFFF;
-  background: transparent;
   margin-left: 97px;
 }/*# sourceMappingURL=studio_games.css.map */
