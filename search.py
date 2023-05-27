@@ -12,22 +12,28 @@ def search_names(keyword):
     cursor = conn.cursor()
 
     # Выполнение SQL-запроса для поиска совпадающих имен
-    cursor.execute("SELECT name FROM games WHERE name ILIKE %s", ('%' + keyword + '%',))
+    cursor.execute(
+        "SELECT ru_name, year, user_score FROM games WHERE name ILIKE %s AND name ILIKE %s LIMIT 10",
+        (keyword + '%', '%' + keyword + '%',))
 
     results = cursor.fetchall()  # Получение всех совпадающих имен
 
     conn.close()  # Закрытие соединения с базой данных
 
-    return (results)
+    return results
 
 
 while True:
-    user_input = input("Введите ключевое слово: ")
+    user_input = input("Введите начальные символы: ")
     search_results = search_names(user_input)
 
     if search_results:
         print("Совпадения:")
         for result in search_results:
-            print(result[0])
+            ru_name, year, user_score = result
+            print(f"Название (RU): {ru_name}")
+            print(f"Год выпуска: {year}")
+            print(f"Рейтинг пользователей: {user_score}")
+            print()  # Пустая строка для разделения результатов
     else:
         print("Нет совпадений.")
