@@ -34,7 +34,8 @@ async def get_game_page(game):
         'user_score': records[0][14],
         'metacritic_score': records[0][15],
         'cover': records[0][16],
-        'description': records[0][17]
+        'description': records[0][17],
+        'game_link': records[0][18]
     }
 
     json_data = json.dumps(data)
