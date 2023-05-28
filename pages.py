@@ -11,7 +11,7 @@ conn = psycopg2.connect(database="Games",
 cursor = conn.cursor()
 
 
-@app.get('/game/{game}')
+@app.post('/game/{game}')
 async def get_game_page(game):
     cursor.execute("SELECT * FROM games WHERE game_link=%s", (game,))
     records = cursor.fetchall()
@@ -37,12 +37,10 @@ async def get_game_page(game):
         'description': records[0][17],
         'game_link': records[0][18]
     }
-
-    json_data = json.dumps(data)
-    return json_data
+    return data
 
 
-@app.get('/studio/{studio}')
+@app.post('/studio/{studio}')
 async def get_studio_page(studio):
     cursor.execute("SELECT * FROM studio WHERE link=%s and st_pu=%s", (studio, 'Студия'))
     records = cursor.fetchall()
@@ -56,12 +54,10 @@ async def get_studio_page(studio):
         'studio_link': records[0][5],
         'logo': records[0][6],
     }
-
-    json_data = json.dumps(data)
-    return json_data
+    return data
 
 
-@app.get('/publisher/{publisher}')
+@app.post('/publisher/{publisher}')
 async def get_studio_page(publisher):
     cursor.execute("SELECT * FROM studio WHERE link=%s and st_pu=%s", (publisher, 'Издатель'))
     records = cursor.fetchall()
@@ -75,6 +71,4 @@ async def get_studio_page(publisher):
         'studio_link': records[0][5],
         'logo': records[0][6],
     }
-
-    json_data = json.dumps(data)
-    return json_data
+    return data
