@@ -1,16 +1,13 @@
 .swiper {
-  width: 80%;
+  width: 100%;
   height: 100%;
-}
-
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 250px;
+  margin-bottom: 110px;
 }
 
 .swiper-slide img {
-  display: block;
-  width: 100%;
-  -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.1333333333), rgba(0, 0, 0, 0.2666666667));
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 349px;
+  height: 533px;
+  border-radius: 60px;
 }/*# sourceMappingURL=slider.css.map */

@@ -53,50 +53,51 @@ button {
   cursor: pointer;
 }
 
-.game_mark, .tab_p, .tab_h, .awards_header, .developer_info, .developer_name2, .developer_name1 {
+.game_mark, .tab_p, .tab_h, .awards_header, .studio_info, .studio_name2, .studio_name1 {
   color: white;
   font-family: "Inter";
   font-weight: 400;
 }
 
-.developer {
+.studio {
   display: flex;
   justify-content: space-between;
   margin-bottom: 124px;
 }
-.developer_photo {
+.studio_photo {
   -o-object-fit: cover;
      object-fit: cover;
-  margin-left: 91px;
-  margin-right: 39px;
-  border-radius: 15px;
-  width: 302px;
-  height: 361px;
+  margin-left: 73px;
+  margin-right: 40px;
+  border-radius: 30px;
+  width: 290px;
+  height: 290px;
 }
-.developer_about {
+.studio_about {
   display: flex;
   background-image: url(../img/background.svg);
   background-repeat: no-repeat;
-  background-position: 91px 149px;
+  background-position: 114px 102px;
+  background-size: 780px 188px;
 }
-.developer_text {
+.studio_text {
   background: transparent;
 }
-.developer_name1 {
+.studio_name1 {
   font-size: 32px;
   line-height: 39px;
-  margin-top: 38px;
   margin-bottom: 6px;
 }
-.developer_name2 {
+.studio_name2 {
   font-size: 20px;
   line-height: 24px;
 }
-.developer_info {
+.studio_info {
   font-size: 24px;
   line-height: 37px;
-  margin-top: 74px;
-  padding-right: 280px;
+  margin-top: 54px;
+  margin-left: 79px;
+  padding-right: 220px;
   background: transparent;
 }
 
@@ -117,7 +118,7 @@ button {
   border-radius: 25px;
 }
 
-.game_mark, .tab_p, .tab_h, .developer_name1, .developer_name2, .developer_info, .awards_header {
+.game_mark, .tab_p, .tab_h, .studio_name1, .studio_name2, .studio_info, .awards_header {
   font-family: "Inter";
   font-weight: 400;
   background: transparent;

@@ -53,51 +53,53 @@ button {
   cursor: pointer;
 }
 
-.awards_header, .developer_info, .developer_name2, .developer_name1 {
+.awards_header, .game_annotation, .game_name2, .game_name1 {
   color: white;
   font-family: "Inter";
   font-weight: 400;
+  background: transparent;
 }
 
-.developer {
+.game {
   display: flex;
   justify-content: space-between;
   margin-bottom: 124px;
 }
-.developer_photo {
+.game_photo {
   -o-object-fit: cover;
      object-fit: cover;
-  margin-left: 91px;
-  margin-right: 39px;
+  margin-left: 76px;
+  margin-right: 48px;
   border-radius: 15px;
-  width: 302px;
-  height: 361px;
+  width: 273px;
+  height: 326px;
 }
-.developer_about {
+.game_about {
   display: flex;
   background-image: url(../img/background.svg);
   background-repeat: no-repeat;
-  background-position: 91px 149px;
+  background-position: 76px 138px;
+  background-size: 818px 188px;
 }
-.developer_text {
+.game_text {
   background: transparent;
 }
-.developer_name1 {
+.game_name1 {
   font-size: 32px;
   line-height: 39px;
   margin-top: 38px;
   margin-bottom: 6px;
 }
-.developer_name2 {
+.game_name2 {
   font-size: 20px;
   line-height: 24px;
 }
-.developer_info {
+.game_annotation {
   font-size: 24px;
   line-height: 37px;
-  margin-top: 74px;
-  padding-right: 280px;
-  background: transparent;
+  margin-left: 157px;
+  margin-top: 103px;
+  padding-right: 174px;
 }
 
 .awards {

@@ -1,0 +1,66 @@
+%text-style {
+    color: white;
+    font-family: 'Inter';
+    font-weight: 400;
+}
+
+.studio {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 124px;
+    &_photo {
+        object-fit: cover;
+        margin-left: 73px;
+        margin-right: 40px;
+        border-radius: 30px;
+        width: 290px;
+        height: 290px; 
+    }
+    &_about {
+        display: flex;
+        background-image: url(../img/background.svg);
+        background-repeat: no-repeat;
+        background-position: 114px 102px;
+        background-size: 780px 188px;
+    }
+    &_text {
+        background: transparent;
+    }
+    &_name1 {
+        @extend %text-style;
+        font-size: 32px;
+        line-height: 39px;
+        margin-bottom: 6px;
+    }
+    &_name2 {
+        @extend %text-style;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    &_info{
+        @extend %text-style;
+        font-size: 24px;
+        line-height: 37px;
+        margin-top: 54px;
+        margin-left: 79px;
+        padding-right: 220px;
+        background: transparent;
+    }
+}
+.awards {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    align-items: center;
+    margin-right: 133px;
+    &_header {
+        @extend %text-style;
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+    &_slider1 {
+        border-radius: 25px;
+    }
+}

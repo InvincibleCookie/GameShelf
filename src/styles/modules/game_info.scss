@@ -1,0 +1,67 @@
+%text-style {
+    color: white;
+    font-family: 'Inter';
+    font-weight: 400;
+    background: transparent;
+}
+
+.game {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 124px;
+    &_photo {
+        object-fit: cover;
+        margin-left: 76px;
+        margin-right: 48px;
+        border-radius: 15px;
+        width: 273px;
+        height: 326px; 
+    }
+    &_about {
+        display: flex;
+        background-image: url(../img/background.svg);
+        background-repeat: no-repeat;
+        background-position: 76px 138px;
+        background-size: 818px 188px;
+    }
+    &_text {
+        background: transparent;
+    }
+    &_name1 {
+        @extend %text-style;
+        font-size: 32px;
+        line-height: 39px;
+        margin-top: 38px;
+        margin-bottom: 6px;
+    }
+    &_name2 {
+        @extend %text-style;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    &_annotation{
+        @extend %text-style;
+        font-size: 24px;
+        line-height: 37px;
+        margin-left: 157px;
+        margin-top: 103px;
+        padding-right: 174px;
+    }
+}
+.awards {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    align-items: center;
+    margin-right: 133px;
+    &_header {
+        @extend %text-style;
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+    &_slider1 {
+        border-radius: 25px;
+    }
+}
