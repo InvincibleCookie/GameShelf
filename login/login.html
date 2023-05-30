@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+    <form action="/login/" method="post">
+        <p>
+            <label for="username">Username</label>
+            <input type="text" name="username">
+        </p>
+        <p>
+            <label for="password">Password</label>
+            <input type="password" name="password">
+        </p>
+        <p>
+            <input type="submit" value="Login" name="login">
+            <input type="submit" value="Signin" name="registration">
+        </p>
+        <p>
+            {% if empty_username %}
+                <p>Enter username</p>
+            {% endif %}
+            {% if empty_password %}
+                <p>Enter password</p>
+            {% endif %}
+            {% if empty_data %}
+                <p>User not found</p>
+            {% endif %}
+            {% if wrong_password %}
+                <p>Incorrect password</p>
+            {% endif %}
+        </p>
+    </form>
+</body>
+</html>
