@@ -3,14 +3,14 @@ import requests
 # задаем параметры запроса
 base_url = "https://api.rawg.io/api/games"
 query_params = {
-    "key": "a4d33c937e414d4aa79a114fb182499d",
+    "key": "key",
     "dates": "2012-01-01,2014-12-31",  # диапазон дат от 2015 до 2020 года
     "ordering": "-metacritic",  # сортировка по убыванию рейтинга
     "page_size": 40  # количество игр на странице
 }
 
 headers = {
-    'x-rapidapi-key': "d03fbd285amsh51cd71d6e415a94p18df93jsn05c82ea2898d",
+    'x-rapidapi-key': "x-keyd",
     'x-rapidapi-host': "rawg-video-games-database.p.rapidapi.com"
 
 }
@@ -34,11 +34,11 @@ def get_games():
                 platforms = ', '.join(platform['platform']['name'] for platform in game_data['platforms'])
                 genres = ', '.join(genre['name'] for genre in game_data['genres'])
                 developers = ', '.join(developer['name'] for developer in requests.request("GET",
-                                                                                           f"https://api.rawg.io/api/games/{game_data['slug']}?key=a4d33c937e414d4aa79a114fb182499d",
+                                                                                           f"https://api.rawg.io/api/games/{game_data['slug']}?key=",
                                                                                            headers=headers).json()[
                     "developers"])
                 publishers = ', '.join(publisher['name'] for publisher in requests.request("GET",
-                                                                                           f"https://api.rawg.io/api/games/{game_data['slug']}?key=a4d33c937e414d4aa79a114fb182499d",
+                                                                                           f"https://api.rawg.io/api/games/{game_data['slug']}?key=",
                                                                                            headers=headers).json()[
                     "publishers"])
                 metascore = game_data['metacritic']
